@@ -4,7 +4,7 @@ $packageArgs = @{
   softwareName  = 'StarUML*'
   fileType      = 'EXE'
   silentArgs    = '/S'
-  validExitCodes= @(0, 3010, 1605, 1614, 1641)
+  validExitCodes= @(0)
 }
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
